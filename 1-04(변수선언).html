@@ -5,6 +5,42 @@
     </head>
     <body>
         <script>
+
+            //  var
+            var x1 = 20;
+            var y1 = 3;
+            var z1 = x1 + y1;
+            document.write(z1);
+
+            console.log("x1 = " + x1);
+            console.log("y1 = " + y1);
+            console.log("z1 = " + z1);
+
+            var x1 = 20;                //  재선언이 가능합.
+            z1 = x1 + y1;
+            console.log(z1);
+
+
+            //  let
+            let x2 = 20;
+            let y2 = 3;
+            let z2 = x2 + y2;
+            document.write(z2);
+
+            console.log("x2 = " + x2);
+            console.log("y2 = " + y2);
+            console.log("z2 = " + z2);
+
+            //let x1 = 20;                //  재선언이 불가능.
+            z2 = x2 + y2;
+
+
+            //  const   -   상수
+            const PI = 3.14;
+
+            //PI = 3.141592;    //에러 발생  -   상수
+            //const PI = 2.14;  //에러 발생 -   재선언 불가
+
         </script>
     </body>
 </html>
