@@ -1,0 +1,115 @@
+
+
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script>
+            //  산술연산자
+
+            //  더하기
+            var x1 = 7;
+            var y1 = 5;
+            var z1 = x1 + y1;
+            console.log(z1);
+
+            //  빼기
+            var x2 = 5;
+            var y2 = 2;
+            var z2 = x2 - y2;
+            console.log(z2);
+            
+            //  곱하기
+            var x3 = 9;
+            var y3 = 2;
+            var z3 = x3 * y3;
+            console.log(z3);
+
+            //나누기
+            var x4 = 8;
+            var y4 = 2;
+            var z4 = x4 / y4;
+            console.log(z4);
+
+            //  거듭제곱
+            var x5 = 5;
+            var y5 = 2;
+            var z5 = x5 ** y5;  //  거듭제곱 연산자
+            console.log(z5);
+
+            // 나머지
+            var x6 = 8;
+            var y6 = 2;
+            var z6 = x6 % y6;
+            console.log(z6);
+
+            // 증가연산자
+            var x7 = 8;
+            x7 ++;
+            console.log(x7);
+            x7 ++;
+            console.log(x7);
+
+            // 감소 연산자
+            var x8 = 8;
+            x8 --;
+            console.log(x8);
+            x8 --;
+            console.log(x8);
+
+            //  +=, -=, *=, /=, **=, %=
+            var x = 5;
+            var y = 2;
+
+            x += y;
+            console.log(x);
+            
+            x -= y;
+            console.log(x);
+            
+            x *= y;
+            console.log(x);
+            
+            x /= y;
+            console.log(x);
+
+            //  문자열 연산자
+            var text1 = "남자친구";
+            var text2 = "귀염(신동민)";
+            var text3 = text1 + " " + text2;
+            console.log(text3);
+
+            text1 += text2;
+            console.log(text1);
+
+            var x9 = 5 + 5;
+            console.log (x9);
+
+            var x10 = "5" + 5;
+            console.log(x10);
+
+            //  비교 연산자
+            console.log(1 == 1);
+            console.log(1 == "1");  //  출력값 ture : 실제 값을 비교함
+            console.log(1 == "아잉");
+            console.log(1 === "1"); //  출력값 false : 값과 타입을 비교함
+
+            console.log(1 != 11);   //  출력값 ture
+            console.log(1 != "1");  //  출력값 false
+            console.log(1 !== "1"); //  출력값 ture
+
+            console.log(3 > 2);     //  출력값 ture
+            console.log(3 < 2);     //  출력값 false
+            console.log(3 >= 2);    //  출력값 ture
+            console.log(3 <= 2);    //  출력값 false
+
+            // 논리 연산자
+            console.log((3 > 2) && (1 > 2));    //  출력값 false
+            console.log((3 > 2) || (1 < 2));    //  출력값 true
+            console.log(!(3 > 2));              //  출력값 false
+            console.log(!(3 < 2));              //  출력값 true
+
+        </script>
+    </body>
+</html>

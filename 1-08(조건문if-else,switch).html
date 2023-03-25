@@ -1,0 +1,110 @@
+
+<html>
+    <head>
+        <title>조건문 - if - else / switch</title>
+    </head>
+    <body>
+        <script>
+
+            var age19 = 19;
+            if(age19 > 18){
+                console.log ("당신은 성인 입니다.");
+            }
+
+            var age17 = 17;
+            if(age17 > 18){
+                console.log ("당신은 성인 입니다.");
+            }else {
+                console.log ("당신은 미성년자 입니다.");
+            }
+
+            // if ... else if .... else
+            var hour = 14;
+            if(hour < 10){
+                console.log ("good morning");
+            }else if(hour < 17){
+                console.log ("good afternoon");
+            }else if(hour < 21){
+                console.log ("good evening");
+            }else{
+                console.log ("good night");
+            }
+
+            var age18 = 18;
+            var isAult;
+
+            if(age18 > 18){
+                isAult = true;
+            }else{
+                isAult = false;
+            }
+
+            var age16 = 16;
+            var isAult16 = false;
+            if(age16 > 18){
+                isAult16 = true;
+            }
+
+            var d = new Date();
+            var day = d.getDay();   //  일요일 0, 월요일 1, 화요일 2.... 토요일 6
+            console.log(day);
+
+            var dayName = "";
+
+            switch (day){
+                case 0:
+                    dayName = "일요일";
+                    break;
+                case 1:
+                    dayName = "월요일";
+                    break;
+                case 2:
+                    dayName = "화요일";
+                    break;
+                case 3:
+                    dayName = "수요일";
+                    break;
+                case 4:
+                    dayName = "목요일";
+                    break;
+                case 5:
+                    dayName = "금요일";
+                    break;
+                case 6:
+                    dayName = "토요일";
+                    break;
+                default:
+                    dayName = "무슨 요일인지 판별 불가능"
+                    break;
+            }
+            console.log(dayName);
+
+
+            //  switch문을 if문으로 변환
+            if(day == 0){
+                    dayName = "일요일";
+
+            }else if(day == 1){
+                    dayName = "월요일";
+
+            }else if(day == 2){
+                    dayName = "화요일";
+
+            }else if(day == 3){
+                    dayName = "수요일";
+
+            }else if(day == 4){
+                    dayName = "목요일";
+
+            }else if(day == 5){
+                    dayName = "금요일";
+
+            }else if(day == 6){
+                    dayName = "토요일";
+
+            }
+            console.log("오늘은 " + dayName + "이지요");
+
+        </script>
+    </body>
+</html>

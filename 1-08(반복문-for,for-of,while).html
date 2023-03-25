@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script>
+
+            //for문
+            for (var i = 0; i < 5; i++){
+                console.log("이 번호는 "+ i);
+            }
+
+            //break ,countinue
+            for(var i = 0; i < 5; i++){
+                if(i == 3){
+                    break;
+                }
+                console.log(i);
+            }
+
+            for(var i = 0; i < 5; i++){
+                if(i == 3){
+                    continue;
+                }
+                console.log(i);
+            }
+
+            var numbers = [43, 23, 5, 7, 29, 19];
+            var len = numbers.length;   //  len = 6
+            for (var i = 0; i < len; i++){
+                console.log(numbers[i]);
+            }
+
+            //향상된 for문
+            for(var i in numbers){  //  Index
+                console.log(numbers[i]);
+            }
+
+            for(var i of numbers){  //  Index
+                console.log(i);
+            }
+
+        </script>
+        </body>
+</html>
