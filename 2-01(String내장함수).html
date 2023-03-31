@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>String 내장함수</title>
+    </head>
+    <body>
+        <script>
+            
+            //length : 문자열의 길이를 리턴
+            var text = "astyuiwertyusdfghj";
+            console.log(text.length);
+
+        //===============================================================================
+            //indexOf
+            var str = "please locate where 'locate'";
+            console.log(str);
+            console.log(str.indexOf("locate")); //  답 : 7
+            console.log(str.indexOf("Locate")); //  대소문자 구분(실패시 : -1)
+            console.log(str.indexOf("cat"));    //  단어가 아니더라도 포함이 되면 거기부터 실행(답 : 8)
+        
+            if(str.indexOf("locate") > -1){
+                console.log("locate 문자 발견");
+            }
+
+            //lastIndex of
+            console.log(str.lastIndexOf("locate"));
+            
+            //search
+            console.log(str.search("locate"));
+
+            // slice
+            var str = "Apple, banana, kiwi"
+            console.log(str.slice(7, 13));  //  출력값 : banana
+            console.log(str.slice(7));      //  출력값 : banana, kiwi
+            console.log(str.slice(-12, -6));//  출력값 : banana (뒤에서 부터 앞으로)
+
+            //substring
+            console.log(str.substring(7, 13));
+
+            //substr
+            console.log(str.substr(7, 6));  // 출력값 : banana
+        
+            var jumin1 = "070828";
+            console.log(jumin1.sustr(0,2)); //  출력값 : 07년
+            console.log(jumin1.sustr(2,2)); //  출력값 : 8월
+            console.log(jumin1.sustr(4,2)); //  출력값 : 28일
+
+            var jumin2 = "2007-08-28";
+            var jumin3 = "07-08-28";
+            console.log(jumin2.substring(0,jumin2.indexOf("-")));
+            console.log(jumin3.substring(0,jumin3.indexOf("-")));
+        </script>
+    </body>
+</html>

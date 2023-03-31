@@ -1,0 +1,27 @@
+
+<html>
+    <head>
+        <title>Quiz-01(세수중 최소)</title>
+    </head>
+    <body>
+        <script>
+            function solution(a, b, c){
+                let answer;
+
+                if(a < b || a < c){
+                    answer = a;
+                }
+                if(b < c || b < a){
+                    answer = b;
+                }
+                if(c < a || c < b){
+                    answer = c;
+                }
+
+                return answer;
+            }
+
+            console.log(solution(6, 5, 11))
+        </script>
+    </body>
+</html>

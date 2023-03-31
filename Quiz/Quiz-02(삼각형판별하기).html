@@ -1,0 +1,46 @@
+
+<html>
+    <head>
+        <title>Quiz-02(삼각형판별하기)</title>
+    </head>
+    <body>
+        <script>
+            function solution(a, b, c){
+                let answer, max;
+                // // 가장큰수 찾기
+                // if(a > c){
+                //     max = c;
+                //     c = a;
+                //     a = max;
+                // }
+                // if(b > c){
+                //     max = c;
+                //     c = b;
+                //     b = max;
+                // }
+                
+                // // 삼각형이 되는지 판별
+                // if(c < b+ a){
+                //     answer = "Yes"
+                // }else{
+                //     answer = "No"
+                // }
+
+                let sum = (a + b + c);
+
+                if(a > b)max = a;
+                else max = b;
+
+                if(c> max) max = c;
+
+                if((sum-max)<= max) answer = "Yes"
+                else answer = "No"
+
+                return answer;
+            }
+
+            console.log(solution(7, 6, 11))
+            console.log(solution(13, 33, 77))
+        </script>
+    </body>
+</html>
