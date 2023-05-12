@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>10부제</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.0/moment.min.js"></script>
+    </head>
+    <body>
+        <script>
+            function solution(day, n){
+                let answer;
+                for(let x of arr){
+                    if(day == x%10){
+                        answer += 1;
+                    }
+                }
+                return answer;
+            }
+            var arr = [43, 24,543, 234, 23, 4234, 4322];
+            console.log(solution(3, arr));
+        </script>
+    </body>
+</html>

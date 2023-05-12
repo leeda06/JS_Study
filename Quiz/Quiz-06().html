@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>연필 갯수</title>
+    </head>
+    <body>
+        <script>
+            var arr = [5, 3, 7, 14, 2, 19, 12];
+            function solution(arr){
+                let sum = 0, min = Number.MAX_SAFE_INTEGER;
+                let answer = [];
+
+                for(var x of arr){
+                    if(x % 2 == 1){
+                        sum += x;
+                        if(x<min) min = x;
+                    }
+                }
+                answer.push(sum);
+                answer.push(min);
+
+                return answer;
+            }
+            console.log(solution(arr));
+        </script>
+    </body>
+</html>
