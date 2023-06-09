@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>this 키워드</title>
+    </head>
+    <body>
+
+        <button onclick="this.style.backgroundColor='red'">클릭1</button>
+        <button onclick="callFunc(this)">클릭2</button>
+        <select onchange="changeSelcet(this)">
+            <option value="1"> 1 </option>
+            <option value="2"> 2 </option>
+            <option value="3"> 3 </option>
+        </select>
+
+        <script>
+            console.log(this);  //  window객체 -> 무수히 많은 메소드를 가지고 있음
+            this.alert("규정이 담배 냄새 맡았어~!");
+
+            function myFunction() {
+                console.log("myFunction 호출");
+                console.log(this);  //  window객체를 가리킴
+            }
+            myFunction();
+
+            var person = {
+                firstName : "길동",
+                lastName : "홍",
+                fullName : function () {   //  function fullName(){}
+                    return this.firstName + " " + person.lastName;  //  object를 가리킴
+                }
+            }
+            console.log(person.fullName());
+
+            function callFunc(obj1){
+                console.log(obj1);
+            }
+
+            function changeSelcet(obj1){
+                console.log(obj1);
+            }
+
+        </script>
+    </body>
+</html>
